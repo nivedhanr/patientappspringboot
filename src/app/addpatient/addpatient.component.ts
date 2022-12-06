@@ -13,7 +13,7 @@ export class AddpatientComponent {
   doapp=""
   dname=""
   readValues=()=>{
-    let data:any={"pid":this.pid"name":this.pname,"address":this.address,"mobileno":this.mobileno,"doapp":this.doapp,"dname":this.dname}
+    let data:any={"pid":this.pid,"pname":this.pname,"address":this.address,"mobileno":this.mobileno,"doapp":this.doapp,"dname":this.dname}
     console.log(data)
   }
 
