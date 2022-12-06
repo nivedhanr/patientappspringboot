@@ -1,0 +1,53 @@
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+            <div class="row g-3">
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+
+                    <label for="" class="form-label">PatientId</label>
+                    <input name="pid"[(ngModel)]="pid" type="text" class="form-control">
+
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+
+                    <label for="" class="form-label">PatientName</label>
+                    <input name="pname"[(ngModel)]="pname" type="text" class="form-control">
+
+                </div>
+               
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+                    <label for="" class="form-label">Address</label>
+                    <textarea name="address"[(ngModel)]="address" id="" cols="30" rows="3" class="form-control"></textarea>
+
+                </div>
+                
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+
+                    <label for="" class="form-label">MobileNumber</label>
+                    <input name="mobileno"[(ngModel)]="mobileno" type="number" class="form-control">
+
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+
+                    <label for="" class="form-label">DateOfAppointment</label>
+                    <input name="doapp"[(ngModel)]="doapp" type="date" id="" class="form-control">
+
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+
+                    <label for="" class="form-label">DoctorsName</label>
+                    <input name="dname"[(ngModel)]="dname" type="text" id="" class="form-control">
+
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+                    <button (click)="readValues()" class="btn btn-primary">Submit</button>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
