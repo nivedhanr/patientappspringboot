@@ -21,6 +21,18 @@ export class AddpatientComponent {
       (response:any)=>
       {
         console.log(response)
+        if (response.status == "success") {
+          alert("Patient added successfully")
+          this.pid=""
+          this.pname=""
+          this.address=""
+          this.mobileno=""
+          this.doapp=""
+          this.dname=""
+         
+        }else{
+          alert("Something went wrong")
+        }
       }
     )
   }
