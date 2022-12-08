@@ -1,0 +1,160 @@
+<app-navbar></app-navbar>
+<div class="container">
+
+
+
+    <div class="row">
+
+
+
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+
+
+            <div class="row g-3">
+
+
+
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xl-12 col-xxl-12 g-3 mt-4">
+
+
+
+                    <label for="" class="form-label">PatientId</label>
+
+
+
+                    <input name="pid" [(ngModel)]="pid" type="text" class="form-control">
+
+
+
+                </div>
+
+
+
+           
+
+
+
+            <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xl-12 col-xxl-12 text-center">
+
+
+
+                <button (click)=" readValue()" class="btn btn-success">Search</button>
+
+
+
+            </div>
+        </div>
+
+        <div class="row mt-5" *ngFor="let j of readValues">
+
+
+
+           <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+
+  
+
+               <label for="" class="form-label">PatientName</label>
+
+  
+
+               <input  type="text" class="form-control" value="{{j.pname}}">
+
+  
+
+           </div>
+
+  
+
+           <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+
+  
+
+               <label for="" class="form-label">Address</label>
+
+  
+
+               <input  type="text" class="form-control" value="{{j.address}}">
+
+  
+
+           </div>
+
+  
+
+           <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+
+  
+
+               <label for="" class="form-label">MobileNumber</label>
+
+  
+
+               <input  type="text" class="form-control" value="{{j.mobileno}}">
+
+  
+
+           </div>      
+           <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+
+
+
+            <label for="" class="form-label">DateOfAppointment</label>
+
+
+
+            <input type="text" class="form-control" value="{{j.doapp}}">
+
+
+
+        </div>
+
+
+
+        <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+
+
+
+            <label for="" class="form-label">DoctorsName</label>
+
+
+
+            <input  type="text" class="form-control" value="{{j.dname}}">
+
+
+
+        </div>
+
+
+
+  
+        
+
+
+            
+
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xl-12 col-xxl-12 text-center">
+
+
+
+            <button (click)="deleteBtnClick(j.id)" class="btn btn-primary">Delete</button>
+
+
+
+        </div>
+
+
+
+    </div>
+        </div>
+    
+
+
+
+    
+
+
+
+</div>
+
+</div>
